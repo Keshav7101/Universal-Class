@@ -27,7 +27,7 @@ public class SignInTest {
 	WebDriver driver;
 	@Before
 	public void beforeScenario() {
-		System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","src\\test\\resources\\Driver\\chromedriver.exe");
 	}
 	
 	@Given("Universal Class website is ready")

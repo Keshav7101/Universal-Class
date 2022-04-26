@@ -20,7 +20,7 @@
 Feature: Sign In feature verification
   Verifying the sign in tab and functionality
 
-  @tag1
+  @Sign
   Scenario: To validate that the sign in tab is visible and working
     Given Universal Class website is ready
     When I launch the URL in chrome browser
