@@ -23,11 +23,12 @@ Feature: Sign In feature verification
   @tag1
   Scenario: 
     Given Universal Class website is ready
-    And sign in option is there
-    When click on sign in
-    Then it should redirect to sign in page
-    And text box should be present there
-    And user should be able to sign in/sign up
+    When I launch the URL in chrome browser
+    Then Sign in tab option should be there
+    When Click on sign in
+    Then It should redirect to sign in page
+    And A text box should be present there
+    And User should be able to sign in/sign up
     
     
     
