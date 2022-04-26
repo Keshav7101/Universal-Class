@@ -24,8 +24,11 @@ import io.cucumber.java.en.*;
 
 
 public class SignInTest {
-	public static WebDriver driver;
-	
+	WebDriver driver;
+	@Before
+	public void beforeScenario() {
+		System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\Drivers\\chromedriver.exe");
+	}
 	
 	@Given("Universal Class website is ready")
 	public void universal_class_website_is_ready() {
