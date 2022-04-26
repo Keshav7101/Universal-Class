@@ -18,7 +18,7 @@
 #Sample Feature Definition Template
 @ForgotPassword
 Feature: Forgot password verification
-  verifying the recover password feature
+  Verifying the recover password feature
 
   @ForgotButton
   Scenario: To validate forgot password button

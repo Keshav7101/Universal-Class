@@ -18,7 +18,7 @@
 #Sample Feature Definition Template
 @SearchCourses
 Feature: verification of seqarch courses
-  verifying the search courses feature in website
+  Verifying the search courses feature in website
 
   @SearchBox
   Scenario: To validate the search box is visible and working
