@@ -48,8 +48,7 @@ public class SignInTest {
 
 	@When("Click on sign in")
 	public void click_on_sign_in() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	    
 	}
 
 	@Then("It should redirect to sign in page")
