@@ -37,13 +37,13 @@ public class SignInTest {
 
 	@When("I launch the URL in chrome browser")
 	public void i_launch_the_url_in_chrome_browser() {
-	    
+	    driver.get("https://www.universalclass.com/");
+	    driver.manage().window().maximize();
 	}
 
 	@Then("Sign in tab option should be there")
 	public void sign_in_tab_option_should_be_there() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	    
 	}
 
 	@When("Click on sign in")
