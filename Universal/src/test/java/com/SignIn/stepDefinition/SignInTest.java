@@ -26,14 +26,12 @@ import io.cucumber.java.en.*;
 public class SignInTest {
 	@Given("Universal Class website is ready")
 	public void universal_class_website_is_ready() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	    System.out.println("Website is up and running");
 	}
 
 	@When("I launch the URL in chrome browser")
 	public void i_launch_the_url_in_chrome_browser() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	    
 	}
 
 	@Then("Sign in tab option should be there")
