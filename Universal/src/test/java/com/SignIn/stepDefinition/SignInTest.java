@@ -24,6 +24,9 @@ import io.cucumber.java.en.*;
 
 
 public class SignInTest {
+	public static WebDriver driver;
+	
+	
 	@Given("Universal Class website is ready")
 	public void universal_class_website_is_ready() {
 	    System.out.println("Website is up and running");
