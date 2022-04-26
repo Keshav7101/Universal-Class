@@ -25,7 +25,7 @@ Feature: Forgot password verification
     Given Website is ready
     When I launch URL in chrome browser
     And Go to sign in page
-    Then Forgot button should be visible
+    Then Forgot button should be visible there
     And Forgot button should be clickable
     
   @RecoverPassword
