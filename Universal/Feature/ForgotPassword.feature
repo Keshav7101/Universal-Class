@@ -21,11 +21,17 @@ Feature: Forgot password verification
   verifying the recover password feature
 
   @ForgotButton
-  Scenario: Title of your scenario
-    Given I want to write a step with precondition
-    And some other precondition
-    When I complete action
-    And some other action
-    And yet another action
-    Then I validate the outcomes
-    And check more outcomes
+  Scenario: To validate forgot password button
+    Given Website is ready
+    When go to sign in page
+    Then forgot button should be visible
+    And forgot button should be clickable
+    
+  @RecoverPassword
+  Scenario: to validate after clicking on forgot password it redirects to new page
+  	Given website is ready
+  	When click on forgot password
+  	Then redirects to new page
+  	And a text box should be present to enter email id
+  	Then a button should be there named as recover password
+  	And recover password button should be clickable
