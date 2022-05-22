@@ -23,6 +23,12 @@ import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
 
 public class SearchTest {
+	WebDriver driver;
+	@Before
+	public void beforeScenario() {
+		System.setProperty("webdriver.chrome.driver","src\\test\\resources\\Driver\\chromedriver.exe");
+	}
+	
 	@Given("Website is ready")
 	public void website_is_ready() {
 		System.out.println("Website is up and running");
@@ -30,14 +36,13 @@ public class SearchTest {
 
 	@When("I launch the url in chrome browser")
 	public void i_launch_the_url_in_chrome_browser() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		driver.get("https://www.universalclass.com/");
+	    driver.manage().window().maximize();
 	}
 
 	@Then("A search box should be visible")
 	public void a_search_box_should_be_visible() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	    
 	}
 
 	@Then("The search box should be in the body of the webpage")
