@@ -25,8 +25,7 @@ import io.cucumber.java.en.*;
 public class SearchTest {
 	@Given("Website is ready")
 	public void website_is_ready() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		System.out.println("Website is up and running");
 	}
 
 	@When("I launch the url in chrome browser")
